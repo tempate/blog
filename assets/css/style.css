@@ -1,0 +1,679 @@
+/* ── FONTS (self-hosted; see README) ──────── */
+
+@font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../fonts/dm-mono-300-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../fonts/dm-mono-300-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/dm-mono-400-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/dm-mono-400-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/dm-mono-500-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/dm-mono-500-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('../fonts/eb-garamond-italic-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('../fonts/eb-garamond-italic-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('../fonts/eb-garamond-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('../fonts/eb-garamond-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    color-scheme: light dark;
+
+    --bg:          #f9f9f7;
+    --bg2:         #f1f1ef;
+    --ink:         #18181a;
+    --ink2:        #3c3c40;
+    --accent:      #3a6b9e;
+    --accent-lt:   #5b8fc2;
+    --accent-soft: rgba(58,107,158,0.4);
+    --border:      rgba(24,24,26,0.10);
+    --card-shadow: rgba(58,107,158,0.08);
+    --sidebar-w: 256px;
+    --serif:     'EB Garamond', Georgia, serif;
+    --mono:      'DM Mono', 'Courier New', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg:          #16161a;
+        --bg2:         #1e1e23;
+        --ink:         #ededea;
+        --ink2:        #b0b0b6;
+        --accent:      #82aad3;
+        --accent-lt:   #a3c4e2;
+        --accent-soft: rgba(130,170,211,0.35);
+        --border:      rgba(255,255,255,0.12);
+        --card-shadow: rgba(0,0,0,0.35);
+    }
+
+    /* the photo is shot on a light background; take the edge off it */
+    .sidebar-photo { filter: brightness(0.92); }
+}
+
+html { scroll-behavior: smooth; }
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 300;
+    background: var(--ink);
+    color: var(--bg);
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus { left: 0; }
+
+body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ── SIDEBAR ──────────────────────────────── */
+.sidebar {
+    width: var(--sidebar-w);
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink2);
+    display: flex;
+    flex-direction: column;
+    padding: 48px 28px 40px;
+    position: fixed;
+    top: 0; bottom: 0;
+    z-index: 100;
+    transition: transform 0.35s ease;
+}
+
+.sidebar-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.sidebar-name {
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+.sidebar-title {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    font-weight: 300;
+    color: var(--ink2);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.sidebar-links a {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--ink2);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.sidebar-links a:hover { color: var(--accent-lt); }
+
+.sidebar-links a svg {
+    width: 13px; height: 13px; flex-shrink: 0;
+    fill: none; stroke: currentColor; stroke-width: 1.8;
+    stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* NAV */
+nav a {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink2);
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.2s, padding-left 0.2s;
+    cursor: pointer;
+}
+
+nav a:hover { color: var(--accent-lt); padding-left: 6px; }
+
+nav a.active {
+    color: var(--accent);
+    padding-left: 6px;
+}
+
+/* BURGER */
+.burger {
+    display: none;
+    position: fixed;
+    top: 16px; left: 16px;
+    z-index: 200;
+    width: 40px; height: 40px;
+    background: var(--ink);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.burger span {
+    display: block;
+    width: 20px; height: 1.5px;
+    background: var(--bg);
+    transition: 0.3s;
+}
+
+.burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ── MAIN ─────────────────────────────────── */
+.main {
+    margin-left: var(--sidebar-w);
+    flex: 1;
+    padding: 60px 68px 80px;
+    max-width: 820px;
+}
+
+.links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 4px; }
+
+.link {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid var(--accent-soft);
+    padding: 2px 7px;
+    border-radius: 2px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.link:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+}
+
+/* ── TYPOGRAPHY ───────────────────────────── */
+h1.page-heading {
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin-bottom: 28px;
+    color: var(--ink);
+}
+
+h2.section-heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* font-style: italic; */
+    color: var(--ink);
+    margin: 44px 0 16px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--border);
+}
+
+h2.section-heading:first-of-type { margin-top: 0; }
+
+p { margin-bottom: 1em; color: var(--ink2); }
+p:last-child { margin-bottom: 0; }
+
+/* ── PUB LIST ─────────────────────────────── */
+.pub-list { list-style: none; padding: 0; }
+
+.pub-item {
+    padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* Keeps an entry clear of the top edge when reached via an #anchor from
+       the software page, where project cards link to the paper they produced. */
+    scroll-margin-top: 24px;
+}
+
+/* Marks the entry an incoming #anchor points at, so it stands out from its
+   otherwise identical neighbours. */
+.pub-item:target {
+    border-left: 3px solid var(--accent-soft);
+    padding-left: 14px;
+    margin-left: -17px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+}
+
+.pub-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.4;
+}
+
+.pub-meta {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 300;
+    color: var(--ink2);
+    letter-spacing: 0.03em;
+}
+
+/* ── TEACHING LIST ────────────────────────── */
+.teaching-list { list-style: none; padding: 0; }
+
+.teaching-item {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.teaching-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.teaching-meta {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 300;
+    color: var(--ink2);
+}
+
+/* ── SOFTWARE CARDS ───────────────────────── */
+.software-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.sw-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-left: 3px solid transparent;
+    border-radius: 2px;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: border-left-color 0.2s, box-shadow 0.2s;
+    /* Keeps a card clear of the top edge when reached via an #anchor from the
+       Recent grid on the home page. */
+    scroll-margin-top: 24px;
+}
+
+.sw-card:hover {
+    border-left-color: var(--accent);
+    box-shadow: 0 2px 12px var(--card-shadow);
+}
+
+/* Marks the card an incoming #anchor points at, matching .pub-item:target. The
+   transparent border above already reserves the space, so nothing shifts. */
+.sw-card:target {
+    border-left-color: var(--accent-soft);
+}
+
+.sw-card-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.sw-card-year {
+    font-family: var(--mono);
+    font-size: 0.63rem;
+    font-weight: 300;
+    color: var(--ink2);
+    letter-spacing: 0.05em;
+    margin-left: auto;   /* pushes the year to the far end of the links row */
+}
+
+.sw-card-desc {
+    font-size: 0.87rem;
+    color: var(--ink2);
+    line-height: 1.55;
+    flex: 1;
+}
+
+/* ── BLOG INDEX ───────────────────────────── */
+.post-list { list-style: none; padding: 0; }
+
+.post-item {
+    padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-item:last-child { border-bottom: none; }
+
+.post-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.post-title:hover { color: var(--accent); }
+
+.post-meta {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 300;
+    color: var(--ink2);
+    letter-spacing: 0.03em;
+}
+
+.post-summary {
+    font-size: 0.87rem;
+    color: var(--ink2);
+    line-height: 1.55;
+}
+
+/* ── BLOG POST ────────────────────────────── */
+.post-date {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 300;
+    color: var(--ink2);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: -18px 0 32px;   /* pulls the date up under .page-heading's margin */
+}
+
+.post-content > *:last-child { margin-bottom: 0; }
+
+.post-content h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 40px 0 14px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content h3 {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 32px 0 12px;
+}
+
+.post-content a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+    transition: border-color 0.15s;
+}
+
+.post-content a:hover { border-bottom-color: var(--accent); }
+
+.post-content ul,
+.post-content ol {
+    color: var(--ink2);
+    margin: 0 0 1em;
+    padding-left: 1.4em;
+}
+
+.post-content li { margin-bottom: 0.35em; }
+
+.post-content blockquote {
+    border-left: 3px solid var(--accent-soft);
+    background: var(--bg2);
+    border-radius: 0 2px 2px 0;
+    padding: 12px 18px;
+    margin: 0 0 1em;
+    font-style: italic;
+}
+
+.post-content code {
+    font-family: var(--mono);
+    font-size: 0.82em;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+
+.post-content pre {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 16px 18px;
+    margin: 0 0 1em;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+/* the <pre> already carries the frame; the inner <code> shouldn't repeat it */
+.post-content pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+    margin: 0 0 1em;
+}
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+}
+
+.post-nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+/* ── OVERLAY ──────────────────────────────── */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 90;
+}
+
+/* ── HOMEPAGE HIGHLIGHTS ──────────────────── */
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.highlight-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-left: 3px solid transparent;
+    border-radius: 2px;
+    padding: 18px 16px;
+    text-decoration: none;
+    transition: border-left-color 0.2s, box-shadow 0.2s;
+}
+
+.highlight-card:hover {
+    border-left-color: var(--accent);
+    box-shadow: 0 2px 12px var(--card-shadow);
+}
+
+.highlight-label {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.highlight-title {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.35;
+}
+
+.highlight-meta {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    font-weight: 300;
+    color: var(--ink2);
+}
+
+/* ── RESPONSIVE ───────────────────────────── */
+/* Below 900px the fixed 256px sidebar leaves too narrow a text column,
+   so the nav goes off-canvas and the grids drop to one column together. */
+@media (max-width: 900px) {
+    .software-grid,
+    .highlight-grid { grid-template-columns: 1fr; }
+
+    /* visibility keeps the off-canvas nav out of the tab order while closed */
+    .sidebar {
+    transform: translateX(-100%);
+    visibility: hidden;
+    width: 260px;
+    transition: transform 0.35s ease, visibility 0.35s ease;
+    }
+
+    .sidebar.open { transform: translateX(0); visibility: visible; }
+
+    .main {
+    margin-left: 0;
+    padding: 72px 28px 60px;
+    }
+
+    .burger { display: flex; }
+    .overlay.open { display: block; }
+}

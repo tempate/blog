@@ -1,0 +1,28 @@
+title: Daniel Díaz Quílez
+description: >-
+  Notes on whatever I happen to be thinking about.
+url: "https://tempate.github.io"
+
+# This repo is a GitHub Pages project site, so it is served under the repository
+# name: https://tempate.github.io/blog/. Everything on the main site (tempate.github.io)
+# lives at the root of the same domain, which is why the sidebar links below the
+# nav point at absolute paths such as /pages/research rather than relative_url.
+baseurl: "/blog"
+
+# baseurl already contributes the /blog prefix, so post URLs are just the title.
+permalink: /:title/
+
+# The blog is deliberately unlisted: nothing on the main site links to it, no
+# sitemap is generated, and every page carries a noindex robots tag (see
+# _layouts/default.html). Note this only keeps it out of search results — the
+# repository itself is public, so the posts are readable on GitHub either way.
+defaults:
+  - scope:
+      path: ""
+    values:
+      sitemap: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
