@@ -2,6 +2,8 @@ title: Daniel Díaz Quílez
 description: >-
   Notes on whatever I happen to be thinking about.
 url: "https://tempate.github.io"
+# Keep the shared style origin fixed when Jekyll uses localhost for previews.
+main_site_url: "https://tempate.github.io"
 
 # This repo is a GitHub Pages project site, so it is served under the repository
 # name: https://tempate.github.io/blog/. Everything on the main site (tempate.github.io)
