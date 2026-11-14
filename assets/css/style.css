@@ -26,7 +26,7 @@ body {
 .post-item:last-child { border-bottom: none; }
 
 .post-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--ink);
     line-height: 1.4;
@@ -38,14 +38,14 @@ body {
 
 .post-meta {
     font-family: var(--mono);
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     font-weight: 400;
     color: var(--muted);
     letter-spacing: 0.03em;
 }
 
 .post-summary {
-    font-size: 0.87rem;
+    font-size: 0.95rem;
     color: var(--ink2);
     line-height: 1.55;
 }
@@ -53,7 +53,7 @@ body {
 /* ── BLOG POST ────────────────────────────── */
 .post-date {
     font-family: var(--mono);
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     font-weight: 400;
     color: var(--muted);
     letter-spacing: 0.05em;
@@ -61,10 +61,12 @@ body {
     margin: -18px 0 32px;   /* pulls the date up under .page-heading's margin */
 }
 
+.post-content { font-size: 1.06em; }
+
 .post-content > *:last-child { margin-bottom: 0; }
 
 .post-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--ink);
     margin: 40px 0 14px;
@@ -73,7 +75,7 @@ body {
 }
 
 .post-content h3 {
-    font-size: 1.02rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--ink);
     margin: 32px 0 12px;
@@ -103,12 +105,11 @@ body {
     border-radius: 0 2px 2px 0;
     padding: 12px 18px;
     margin: 0 0 1em;
-    font-style: italic;
 }
 
 .post-content code {
     font-family: var(--mono);
-    font-size: 0.82em;
+    font-size: 1em;
     background: var(--bg2);
     border: 1px solid var(--border);
     border-radius: 2px;
@@ -130,7 +131,7 @@ body {
     background: none;
     border: none;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 1em;
 }
 
 .post-content img {
