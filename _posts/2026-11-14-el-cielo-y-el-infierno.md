@@ -1,6 +1,6 @@
 ---
-title: El cielo y el infierno
-date: 2026-11-14
+title: Ecuaciones de Cauchy-Riemann
+date: 2026-11-15
 ---
 
 De pequeño pensaba que el cielo y el infierno eran dos sitios diferentes. Me imaginaba el cielo como un recinto inmenso sobre las nubes, en el que podía jugar y comer todo lo que quisiera. Por algún motivo, me veía trotando encima de un jabalí, partiéndome de risa. Todo era diversión.
