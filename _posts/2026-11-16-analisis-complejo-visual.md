@@ -44,7 +44,13 @@ Ahora podemos probar a multiplicar por otros números y ver qué pasa. Si multip
 </figure>
 </div>
 
-¿Pero qué pasa si multiplicamos $z$ por un número complejo $c$ cualquiera? Para verlo, podemos empezar probando con los números complejos más sencillos, $1$ e $i$. El $1$ va a $c$, e $i$ va a $ic$, que es $c$ girado un cuarto de vuelta. Así que el cuadrado que forman $1$ e $i$ se convierte en otro cuadrado, girado y estirado. Y como $c\,z = c\,(x + iy) = x \cdot c + y \cdot ic$, el resto del plano les sigue. Así, multiplicar por $c$ gira el plano el ángulo de $c$, el que forma con el eje real, y lo estira $\lvert c \rvert$ veces, donde $\lvert c \rvert$ es la distancia de $c$ a $0$.
+¿Pero qué pasa si multiplicamos $z$ por un número complejo $c$ cualquiera? Para verlo, podemos empezar probando con los números complejos más sencillos, $1$ e $i$. El $1$ va a $c$, e $i$ va a $ic$, que es $c$ girado un cuarto de vuelta. Así que el cuadrado que forman $1$ e $i$ se convierte en otro cuadrado, girado y estirado. Y como 
+
+$$
+c\,z = c\,(x + iy) = x \cdot c + y \cdot ic, 
+$$
+
+el resto del plano les sigue. Así, multiplicar por $c$ gira el plano el ángulo que forma con el eje real, y lo estira $\lvert c \rvert$ veces, donde $\lvert c \rvert$ es la distancia de $c$ a $0$.
 
 Por ejemplo, $1 + i$ forma un ángulo de 45° y tiene módulo $\sqrt{2}$, así que multiplicar por $1 + i$ gira el plano 45° y lo estira $\sqrt{2}$ veces.
 
