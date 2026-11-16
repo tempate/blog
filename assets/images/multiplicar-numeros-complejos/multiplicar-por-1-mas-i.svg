@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461 281" width="461" height="281" font-family="Inconsolata, monospace" font-size="18">
+<defs><marker id="axis" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5e5e65"/></marker><marker id="turn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b509ac"/></marker></defs>
+<line x1="10" y1="226" x2="451" y2="226" stroke="#5e5e65" marker-end="url(#axis)"/>
+<line x1="235" y1="271" x2="235" y2="10" stroke="#5e5e65" marker-end="url(#axis)"/>
+<polygon points="235,226 325,226 325,136 235,136" fill="#5e5e65" fill-opacity="0.12" stroke="#5e5e65" stroke-width="1.5"/>
+<polygon points="235,226 325,136 235,46 145,136" fill="#b509ac" fill-opacity="0.10" stroke="#b509ac" stroke-width="2"/>
+<path d="M 284.5 226 A 49.5 49.5 0 0 0 270.002 190.998" fill="none" stroke="#b509ac" stroke-width="1.5" marker-end="url(#turn)"/>
+<text x="290.8" y="215.2" fill="#b509ac" font-size="15">45°</text>
+<circle cx="235" cy="226" r="4" fill="#5e5e65"/>
+<circle cx="325" cy="226" r="4" fill="#5e5e65"/>
+<circle cx="235" cy="136" r="4" fill="#5e5e65"/>
+<circle cx="325" cy="136" r="4" fill="#b509ac"/>
+<circle cx="145" cy="136" r="4" fill="#b509ac"/>
+<text x="325" y="250" text-anchor="middle" fill="#5e5e65" stroke="#faf9f6" stroke-width="5" paint-order="stroke">1</text>
+<text x="225" y="154" text-anchor="end" fill="#5e5e65" stroke="#faf9f6" stroke-width="5" paint-order="stroke"><tspan font-style="italic">i</tspan></text>
+<text x="335" y="140" text-anchor="start" fill="#b509ac" stroke="#faf9f6" stroke-width="5" paint-order="stroke"><tspan font-style="italic">c</tspan> = 1 + <tspan font-style="italic">i</tspan></text>
+<text x="135" y="140" text-anchor="end" fill="#b509ac" stroke="#faf9f6" stroke-width="5" paint-order="stroke"><tspan font-style="italic">ic</tspan> = −1 + <tspan font-style="italic">i</tspan></text>
+</svg>
