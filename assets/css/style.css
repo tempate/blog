@@ -142,6 +142,35 @@ body {
     margin: 0 0 1em;
 }
 
+.post-content figure { margin: 0 0 1em; }
+
+/* two figures next to each other, stacked on narrow screens */
+.post-content .figure-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 0 0 1em;
+}
+
+.post-content .figure-row figure {
+    flex: 1 1 260px;
+    min-width: 0;
+    margin: 0;
+}
+
+.post-content figure img { margin-bottom: 0.5em; }
+
+.post-content figcaption {
+    font-size: 0.9em;
+    color: var(--muted);
+}
+
+/* long display formulas scroll instead of running past the column */
+.post-content .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .post-content hr {
     border: none;
     border-top: 1px solid var(--border);

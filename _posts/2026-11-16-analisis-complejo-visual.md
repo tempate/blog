@@ -1,11 +1,13 @@
 ---
-title: Multiplicar números complejos es girar y estirar
+title: Análisis Complejo Visual
 date: 2026-11-16
 ---
 
 Mi hermana está cursando su primera asignatura de análisis complejo. Ella odia el análisis, y la verdad es que no es difícil odiarlo. Es un coñazo. Todo está lleno de números irracionales, derivadas, integrales, fórmulas absurdas que memorizar y que cuesta entender. Todo es mucho más fácil en álgebra, donde los objetos son tangibles. Pero el análisis complejo es diferente. 
 
 No me acuerdo de cómo ni de por qué, pero mientras yo cursaba la asignatura de análisis complejo, me leí el mejor libro de matemáticas que he leído nunca, _Visual Complex Analysis_, de Tristan Needham. Me gustó tanto que hizo que la asignatura que más odiaba se convirtiera en mi asignatura favorita, y desde entonces, siempre pienso que odio el análisis real, pero adoro el análisis complejo. Hoy me gustaría intentar transmitirle ese amor a mi hermana.
+
+## Multiplicar números complejos es girar y estirar
 
 Quiero empezar analizando la relación entre los números complejos y el plano. Un número complejo es un número $z = x + iy$ donde $x \in \mathbb{R}$ es la parte real de $z$ y $y \in \mathbb{R}$, la parte imaginaria. Podemos pensar en un número complejo $z$ como en una tupla $\langle x,y \rangle \in \mathbb{R}^2$ y dibujarlo en un plano cartesiano con la parte real en el eje X y la parte imaginaria en el eje Y. 
 
@@ -29,7 +31,7 @@ Para entender esta idea mejor, podemos dibujar qué le pasa al plano. Basta con 
 </figure>
 </div>
 
-Ahora podemos probar a multiplicar por otros números y ver qué pasa. Si multiplicamos $z$ por $-i$, el plano rota hacia el otro lado, en sentido horario. Y si multiplicamos $z$ por $1/2$, el plano se contrae hacia el centro.
+Ahora podemos probar a multiplicar por otros números y ver qué pasa. Si multiplicamos $z$ por $-i$, el plano rota hacia el otro lado, en sentido horario. Y si multiplicamos $z$ por $1/2$, el plano se aplasta hacia el centro.
 
 <div class="figure-row">
 <figure>
@@ -38,7 +40,7 @@ Ahora podemos probar a multiplicar por otros números y ver qué pasa. Si multip
 </figure>
 <figure>
   <img src="../assets/images/multiplicar-numeros-complejos/multiplicar-por-un-medio.svg" alt="El cuadrado de vértices 0, 1, 1 + i e i, en gris, y su imagen al multiplicar por 1/2, en rosa, con vértices 0, 1/2, 1/2 + i/2 e i/2. El cuadrado rosa es el gris con la mitad de lado.">
-  <figcaption>Multiplicar por c = 1/2 contrae el plano.</figcaption>
+  <figcaption>Multiplicar por c = 1/2 aplasta el plano.</figcaption>
 </figure>
 </div>
 
@@ -51,4 +53,4 @@ Por ejemplo, $1 + i$ forma un ángulo de 45° y tiene módulo $\sqrt{2}$, así q
   <figcaption>Multiplicar por c = 1 + i lleva el cuadrado gris al rosa.</figcaption>
 </figure>
 
-Y por eso, multiplicar números complejos es girar y estirar (o comprimir).
+Y por eso, multiplicar números complejos es girar y estirar (o aplastar).

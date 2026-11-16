@@ -11,6 +11,10 @@ main_site_url: "https://tempate.github.io"
 # nav point at absolute paths such as /pages/research rather than relative_url.
 baseurl: "/blog"
 
+# The github-pages gem applies jekyll-theme-primer by default. Its style.scss
+# compiles to assets/css/style.css and can overwrite ours on rebuilds.
+theme: null
+
 # baseurl already contributes the /blog prefix, so post URLs are just the title.
 permalink: /:title/
 
