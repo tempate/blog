@@ -63,21 +63,21 @@ Y por eso, multiplicar números complejos es girar y estirar (o aplastar).
 
 ## Las ecuaciones de Cauchy-Riemann
 
-El análisis estudia sobre todo funciones, y una de las preguntas más importantes que podemos hacer sobre una función es cuándo se puede derivar, porque que una función se pueda derivar es equivalente a que sea "buena". En análisis real, cuando una función es buena decimos que es derivable, pero en análisis complejo, decimos que es holomórfica. 
+El análisis estudia sobre todo funciones, y una de las preguntas más importantes que podemos hacer sobre una función es cuándo se puede derivar, porque que una función se pueda derivar es equivalente a que sea "buena". En análisis real, cuando una función es buena decimos que es derivable, pero en análisis complejo, decimos que es holomorfa. 
 
-Una función compleja $f: \mathbb{C} \to \mathbb{C}$ es _holomórfica_ en $z_0 \in \mathbb{C}$ cuando
+Una función compleja $f: \mathbb{C} \to \mathbb{C}$ es _holomorfa_ en $z_0 \in \mathbb{C}$ cuando
 
 $$
 \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h} = c
 $$
 
-para algún $c \in \mathbb{C}$. Si despejamos la definición, obtenemos que $f$ es holomórfica en $z_0$ cuando 
+para algún $c \in \mathbb{C}$. Si despejamos la definición, obtenemos que $f$ es holomorfa en $z_0$ cuando 
 
 $$
-\lim_{h \to 0} f(z_0 + h) = f(z_0) + \lim_{h \to 0} c \, h,
+\lim_{h \to 0} f(z_0 + h) = f(z_0) + \lim_{h \to 0} c \, h.
 $$
 
-es decir, cuando al hacer zoom en $z_0$, $f$ equivale a multiplicar por $c$. En la sección anterior vimos que multiplicar por un número complejo es equivalente a girar y a estirar, así que $f$ es holomórfica cuando transforma un cuadrado pequeño alrededor de $z_0$ en otro cuadrado girado y estirado por $c$.
+El límite $\lim_{h \to 0} f(z_0 + h)$ analiza cómo transforma $f$ los puntos de cerca de $f(z_0)$. Es como si hiciéramos zoom en $f(z_0)$ y viéramos como se comporta $f$. Y lo que vemos es que $f$ es holomorfa en $z_0$ si y solo si $f$ equivale a multiplicar por $c$ cerca de $f(z_0)$. En la sección anterior vimos que multiplicar por un número complejo es equivalente a girar y a estirar, así que $f$ es holomorfa cuando transforma un cuadrado pequeño alrededor de $z_0$ en otro cuadrado girado y estirado por $c$.
 
 De la misma forma podemos descomponer $z$ en $x$ e $y$, podemos descomponer $f$ en dos funciones vectoriales reales. La función $f$ es equivalente a 
 
@@ -104,7 +104,7 @@ $$
   <img src="../assets/images/cauchy-riemann/cuadrado-holomorfo.svg" alt="A la izquierda, en gris, un cuadrado pequeño con vértices en 0, ε e iε. A la derecha, en rosa, su imagen por f: otro cuadrado con un vértice en f(0), girado y estirado, cuyos lados son (∂ₓu + i∂ₓv)ε y (∂ᵧu + i∂ᵧv)ε y forman un ángulo recto.">
 </figure>
 
-Antes hemos dicho que $f$ es holomórfica cuando, al hacer zoom, gira y estira los puntos. Pero girar y estirar solo puede rotar el cuadrado y cambiar su tamaño. No lo puede deformar. Así que $f$ es holomórfica si y solo si transforma el cuadrado en otro cuadrado. El lado vertical del nuevo cuadrado entonces tiene que ser el lado horizontal girado 90°, y como multiplicar por $i$ es como girar 90°, tenemos que
+Antes hemos dicho que $f$ es holomorfa cuando, al hacer zoom, gira y estira los puntos. Pero girar y estirar solo puede rotar el cuadrado y cambiar su tamaño. No lo puede deformar. Así que $f$ es holomorfa si y solo si transforma el cuadrado en otro cuadrado. El lado vertical del nuevo cuadrado entonces tiene que ser el lado horizontal girado 90°, y como multiplicar por $i$ es como girar 90°, tenemos que
 
 $$
 \partial_y u + i\, \partial_y v = i\,(\partial_x u + i\, \partial_x v) = -\partial_x v + i\, \partial_x u.
@@ -116,5 +116,5 @@ $$
 \partial_x u = \partial_y v \quad \text{y} \quad \partial_y u = -\partial_x v,
 $$
 
-que, aunque parezcan misteriosas, solo dicen que para que una función sea holomórfica, tiene que transformar los cuadrados pequeños en cuadrados.
+que, aunque parezcan misteriosas, solo dicen que para que una función sea holomorfa, tiene que transformar los cuadrados pequeños en cuadrados.
 
