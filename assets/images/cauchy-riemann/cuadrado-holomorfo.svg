@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 240" width="880" height="240" font-family="Inconsolata, monospace" font-size="18">
+<defs><marker id="axis" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5e5e65"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5e5e65"/></marker><marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b509ac"/></marker></defs>
+<polygon points="130.0,190.0 210.0,190.0 210.0,110.0 130.0,110.0" fill="#5e5e65" fill-opacity="0.12" stroke="#5e5e65" stroke-width="1.5"/>
+<line x1="130" y1="190" x2="208" y2="190" stroke="#5e5e65" stroke-width="2.5" marker-end="url(#g)"/>
+<line x1="130" y1="190" x2="130" y2="112" stroke="#5e5e65" stroke-width="2.5" marker-end="url(#g)"/>
+<circle cx="130" cy="190" r="4.5" fill="#5e5e65"/>
+<circle cx="210" cy="190" r="4.5" fill="#5e5e65"/>
+<circle cx="130" cy="110" r="4.5" fill="#5e5e65"/>
+<text x="210.0" y="216.0" text-anchor="middle" fill="#5e5e65" stroke="#faf9f6" stroke-width="5" paint-order="stroke"><tspan font-style="italic">ε</tspan></text>
+<text x="120.0" y="116.0" text-anchor="end" fill="#5e5e65" stroke="#faf9f6" stroke-width="5" paint-order="stroke">i<tspan font-style="italic">ε</tspan></text>
+<text x="122.0" y="212.0" text-anchor="end" fill="#5e5e65" stroke="#faf9f6" stroke-width="5" paint-order="stroke">0</text>
+<path d="M 270 150 Q 355 105 440 150" fill="none" stroke="#b509ac" stroke-width="1.8" marker-end="url(#p)"/>
+<text x="355.0" y="112.0" text-anchor="middle" fill="#b509ac" stroke="#faf9f6" stroke-width="5" paint-order="stroke"><tspan font-style="italic">f</tspan></text>
+<polygon points="640.0,200.0 726.6,150.0 676.6,63.4 590.0,113.4" fill="#b509ac" fill-opacity="0.10" stroke="#b509ac" stroke-width="1.5"/>
+<polyline points="650.4,194.0 644.4,183.6 634.0,189.6" fill="none" stroke="#b509ac" stroke-width="1.2"/>
+<line x1="640" y1="200" x2="724.9" y2="151.0" stroke="#b509ac" stroke-width="2.5" marker-end="url(#p)"/>
+<line x1="640" y1="200" x2="591.0" y2="115.1" stroke="#b509ac" stroke-width="2.5" marker-end="url(#p)"/>
+<circle cx="640" cy="200" r="4.5" fill="#b509ac"/>
+<text x="640.0" y="226.0" text-anchor="middle" fill="#b509ac" stroke="#faf9f6" stroke-width="5" paint-order="stroke"><tspan font-style="italic">f</tspan>(0)</text>
+<text x="700.0" y="192.0" text-anchor="start" fill="#b509ac" stroke="#faf9f6" stroke-width="5" paint-order="stroke">(∂<tspan baseline-shift="sub" font-size="13"><tspan font-style="italic">x</tspan></tspan><tspan font-style="italic">u</tspan> + i∂<tspan baseline-shift="sub" font-size="13"><tspan font-style="italic">x</tspan></tspan><tspan font-style="italic">v</tspan>)<tspan font-style="italic">ε</tspan></text>
+<text x="604.0" y="160.0" text-anchor="end" fill="#b509ac" stroke="#faf9f6" stroke-width="5" paint-order="stroke">(∂<tspan baseline-shift="sub" font-size="13"><tspan font-style="italic">y</tspan></tspan><tspan font-style="italic">u</tspan> + i∂<tspan baseline-shift="sub" font-size="13"><tspan font-style="italic">y</tspan></tspan><tspan font-style="italic">v</tspan>)<tspan font-style="italic">ε</tspan></text>
+</svg>

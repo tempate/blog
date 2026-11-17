@@ -60,3 +60,61 @@ Por ejemplo, $1 + i$ forma un ángulo de 45° y tiene módulo $\sqrt{2}$, así q
 </figure>
 
 Y por eso, multiplicar números complejos es girar y estirar (o aplastar).
+
+## Las ecuaciones de Cauchy-Riemann
+
+El análisis estudia sobre todo funciones, y una de las preguntas más importantes que podemos hacer sobre una función es cuándo se puede derivar, porque que una función se pueda derivar es equivalente a que sea "buena". En análisis real, cuando una función es buena decimos que es derivable, pero en análisis complejo, decimos que es holomórfica. 
+
+Una función compleja $f: \mathbb{C} \to \mathbb{C}$ es _holomórfica_ en $z_0 \in \mathbb{C}$ cuando
+
+$$
+\lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h} = c
+$$
+
+para algún $c \in \mathbb{C}$. Si despejamos la definición, obtenemos que $f$ es holomórfica en $z_0$ cuando 
+
+$$
+\lim_{h \to 0} f(z_0 + h) = f(z_0) + \lim_{h \to 0} c \, h,
+$$
+
+es decir, cuando al hacer zoom en $z_0$, $f$ equivale a multiplicar por $c$. En la sección anterior vimos que multiplicar por un número complejo es equivalente a girar y a estirar, así que $f$ es holomórfica cuando transforma un cuadrado pequeño alrededor de $z_0$ en otro cuadrado girado y estirado por $c$.
+
+De la misma forma podemos descomponer $z$ en $x$ e $y$, podemos descomponer $f$ en dos funciones vectoriales reales. La función $f$ es equivalente a 
+
+$$
+f(x,y) = u(x,y) + i v(x,y)
+$$ 
+
+donde $u : \mathbb{R}^2 \to \mathbb{R}$ es la parte real de $f$ y $v : \mathbb{R}^2 \to \mathbb{R}$, la parte imaginaria. 
+
+
+Ahora, podemos hacer un cuadrado pequeño centrado en $z_0$ y analizar cómo lo transforma $f$. Supongamos que el cuadrado tiene vértices en $z_0$, $z_0 + \varepsilon$, $z_0 + i \varepsilon$ y $z_0 + \varepsilon + i \varepsilon$, como en el dibujo. El punto $z_0 + \varepsilon$ desplaza $z_0$ por la tupla $\langle \varepsilon, 0 \rangle$, así que para ver cómo lo transforma $f$, solo tenemos que centrarnos en el eje $X$. Cada vez que movemos $\varepsilon$, la imagen de $f$ se mueve
+
+$$
+(\partial_x u + i\, \partial_x v)\, \varepsilon.
+$$
+
+El punto $i \varepsilon$, sin embargo, desplaza $z_0$ por la tupla $\langle 0, \varepsilon \rangle$, así que para ver cómo lo transforma $f$, solo tenemos que centrarnos en el eje $Y$. Cada vez que movemos $i \varepsilon$, la imagen de $f$ se mueve
+
+$$
+(\partial_y u + i\, \partial_y v)\, \varepsilon.
+$$
+
+<figure>
+  <img src="../assets/images/cauchy-riemann/cuadrado-holomorfo.svg" alt="A la izquierda, en gris, un cuadrado pequeño con vértices en 0, ε e iε. A la derecha, en rosa, su imagen por f: otro cuadrado con un vértice en f(0), girado y estirado, cuyos lados son (∂ₓu + i∂ₓv)ε y (∂ᵧu + i∂ᵧv)ε y forman un ángulo recto.">
+</figure>
+
+Antes hemos dicho que $f$ es holomórfica cuando, al hacer zoom, gira y estira los puntos. Pero girar y estirar solo puede rotar el cuadrado y cambiar su tamaño. No lo puede deformar. Así que $f$ es holomórfica si y solo si transforma el cuadrado en otro cuadrado. El lado vertical del nuevo cuadrado entonces tiene que ser el lado horizontal girado 90°, y como multiplicar por $i$ es como girar 90°, tenemos que
+
+$$
+\partial_y u + i\, \partial_y v = i\,(\partial_x u + i\, \partial_x v) = -\partial_x v + i\, \partial_x u.
+$$
+
+Igualando la parte real con la real y la imaginaria con la imaginaria, llegamos a las ecuaciones de Cauchy-Riemann,
+
+$$
+\partial_x u = \partial_y v \quad \text{y} \quad \partial_y u = -\partial_x v,
+$$
+
+que, aunque parezcan misteriosas, solo dicen que para que una función sea holomórfica, tiene que transformar los cuadrados pequeños en cuadrados.
+
