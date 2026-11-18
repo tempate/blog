@@ -63,32 +63,29 @@ Y por eso, multiplicar números complejos es girar y estirar (o aplastar).
 
 ## Las ecuaciones de Cauchy-Riemann
 
-El análisis estudia sobre todo funciones, y una de las preguntas más importantes que podemos hacer sobre una función es cuándo se puede derivar, porque que una función se pueda derivar es equivalente a que sea "buena". En análisis real, cuando una función es buena decimos que es derivable, pero en análisis complejo, decimos que es holomorfa. 
-
-Una función compleja $f: \mathbb{C} \to \mathbb{C}$ es _holomorfa_ en $z_0 \in \mathbb{C}$ cuando
+Lo primero que se estudia en análisis es la derivada, pero para poder estudiar la derivada, tenemos que estudiar primero qué funciones podemos derivar. Podemos derivar una función $f: \mathbb{C} \to \mathbb{C}$ en un punto $z_0 \in \mathbb{C}$, y decimos que $f$ es _holomorfa_ en $z_0$, cuando
 
 $$
 \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h} = c
 $$
 
-para algún $c \in \mathbb{C}$. Si despejamos la definición, obtenemos que $f$ es holomorfa en $z_0$ cuando 
+para algún $c \in \mathbb{C}$. Si existe, decimos que la derivada de $f$ en $z_0$ es $c$, $f'(z_0) = c$. 
+
+Si despejamos la definición, obtenemos que $f$ es holomorfa en $z_0$ cuando 
 
 $$
 \lim_{h \to 0} f(z_0 + h) = f(z_0) + \lim_{h \to 0} c \, h.
 $$
 
-El límite $\lim_{h \to 0} f(z_0 + h)$ analiza cómo transforma $f$ los puntos de cerca de $f(z_0)$. Es como si hiciéramos zoom en $f(z_0)$ y viéramos como se comporta $f$. Y lo que vemos es que $f$ es holomorfa en $z_0$ si y solo si $f$ equivale a multiplicar por $c$ cerca de $f(z_0)$. En la sección anterior vimos que multiplicar por un número complejo es equivalente a girar y a estirar, así que $f$ es holomorfa cuando transforma un cuadrado pequeño alrededor de $z_0$ en otro cuadrado girado y estirado por $c$.
+El límite $\lim_{h \to 0} f(z_0 + h)$ analiza cómo transforma $f$ los puntos de cerca de $f(z_0)$. Hace zoom en $f(z_0)$ y ve qué hace $f$, y lo que ve es que $f$ es holomorfa en $z_0$ si y solo si $f$ equivale a multiplicar por un número complejo cerca de $f(z_0)$. En la sección anterior vimos que multiplicar por un número complejo es equivalente a girar y a estirar, así que $f$ es holomorfa cuando transforma un cuadrado pequeño alrededor de $z_0$ en otro cuadrado girado y estirado por $c$. Las funciones holomorfas, por tanto, preservan los ángulos.
 
-De la misma forma podemos descomponer $z$ en $x$ e $y$, podemos descomponer $f$ en dos funciones vectoriales reales. La función $f$ es equivalente a 
+Para caracterizar cuándo una función $f$ es holomorfa, vamos a descomponer $f$ usando dos funciones vectoriales reales,
 
 $$
-f(x,y) = u(x,y) + i v(x,y)
+f(x,y) = u(x,y) + i v(x,y),
 $$ 
 
-donde $u : \mathbb{R}^2 \to \mathbb{R}$ es la parte real de $f$ y $v : \mathbb{R}^2 \to \mathbb{R}$, la parte imaginaria. 
-
-
-Ahora, podemos hacer un cuadrado pequeño centrado en $z_0$ y analizar cómo lo transforma $f$. Supongamos que el cuadrado tiene vértices en $z_0$, $z_0 + \varepsilon$, $z_0 + i \varepsilon$ y $z_0 + \varepsilon + i \varepsilon$, como en el dibujo. El punto $z_0 + \varepsilon$ desplaza $z_0$ por la tupla $\langle \varepsilon, 0 \rangle$, así que para ver cómo lo transforma $f$, solo tenemos que centrarnos en el eje $X$. Cada vez que movemos $\varepsilon$, la imagen de $f$ se mueve
+donde $u : \mathbb{R}^2 \to \mathbb{R}$ es la parte real de $f$ y $v : \mathbb{R}^2 \to \mathbb{R}$, la parte imaginaria. Ahora, podemos hacer un cuadrado pequeño centrado en $z_0$ y analizar cómo lo transforma $f$. Supongamos que el cuadrado tiene vértices en $z_0$, $z_0 + \varepsilon$, $z_0 + i \varepsilon$ y $z_0 + \varepsilon + i \varepsilon$. El punto $z_0 + \varepsilon$ desplaza $z_0$ por la tupla $\langle \varepsilon, 0 \rangle$, así que para ver cómo lo transforma $f$, solo tenemos que centrarnos en el eje $X$. Cada vez que movemos $\varepsilon$, la imagen de $f$ se mueve
 
 $$
 (\partial_x u + i\, \partial_x v)\, \varepsilon.
@@ -116,5 +113,5 @@ $$
 \partial_x u = \partial_y v \quad \text{y} \quad \partial_y u = -\partial_x v,
 $$
 
-que, aunque parezcan misteriosas, solo dicen que para que una función sea holomorfa, tiene que transformar los cuadrados pequeños en cuadrados.
+que, aunque parezcan misteriosas, solo dicen que una función es holomorfa cuando transforma los cuadrados en cuadrados.
 
